@@ -84,6 +84,9 @@ p {
 .project div ul{
     padding: 0 40px;
     font-size: 18px;
+    overflow-y: scroll;
+    scroll-padding-bottom: 1px;
+    
 }
 .project div ul li {
     padding-bottom: 15px;
@@ -105,9 +108,15 @@ p {
     flex-direction: row-reverse;
 }
 
+.project div:nth-child(2n){
+    border-top: 3px solid rgba(112, 112, 112, 0.5);
+    max-height: 300px;
+    padding-top: 30px;
+}
+
 .project div img {
     width: 38%;
-    min-height: 300px;
+    max-height: 300px;
     border: 1px solid white;
     border-radius: 10px;
 }
@@ -268,10 +277,13 @@ p {
         margin: 0 6px;
     }
 
-
 }
 
 @media (max-width: 900px){
+
+    p, li {
+        font-size: 12px;
+    }
 
     .project div{
         flex-direction: column;
@@ -280,6 +292,8 @@ p {
 
     .project div img {
         min-width: 80%;
+        max-height: rem;
+        border: 1px solid red;
     }
 
     .project h2 {
@@ -385,13 +399,14 @@ button:focus {
     height:5px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: black;
 }
 ::-webkit-scrollbar-thumb {
-    background: #000; 
+    background: rgb(37, 37, 37); 
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+    
 }
 @-webkit-keyframes Gradient {
 0% {background-position: 0% 50%}
