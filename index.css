@@ -139,7 +139,6 @@ p {
     font-weight:bold;
     background:transparent;
     transition:0.4s ease-in-out;
-    margin: 30px 10px;
 }
 .btn_one:hover {
     background:white;
@@ -175,11 +174,14 @@ p {
     justify-content:center;
     flex-direction:column;
     padding-top:20vh;
+
 }
 #tagline {
     font-size:50px;
     width:80%;
     margin: 0 auto;
+
+    
 }
 #portfolio {
     width:80%;
@@ -247,21 +249,18 @@ p {
 }
 
 #details {
-    margin:6vh 0px;
+    margin:1.5vh 0px;
 }
 .btn_social {
-    font-size:18px;
     color:#fff;
-    margin:40px 20px;
-    padding:15px 18px;
+    margin: 0px 15px;
     border-radius:50%;
-    background:#000;
     transition:0.4s ease-in-out;
 }
 .btn_social:hover {
-    color:#000;
-    background:#fff;
-    cursor:pointer;
+    transform: scale(3.2);
+    color: rgb(167, 161, 161);
+    cursor: pointer;
 }
 
 @media (max-width: 1070px) {
